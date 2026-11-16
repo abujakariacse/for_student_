@@ -43,6 +43,7 @@ app.get("/", (req, res) => {
 
 const verifyToken = (req, res, next) => {
   const authHeader = req.headers.authorization;
+  console.log("verifyToken hitting. Authorization header:", authHeader);
   if (!authHeader) {
     return res.status(401).send({
       message: "Unauthorized",
@@ -56,7 +57,7 @@ const verifyToken = (req, res, next) => {
       message: "Unauthorized",
     });
   }
-  console.log("Token received:", token);
+  console.log("Token received from client:", token);
   next();
 };
 

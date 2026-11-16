@@ -1,6 +1,6 @@
 import { JobFormData, JobFormFields } from "@/lib/types/job"
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000"
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080"
 
 // insert job
 export async function createJob(

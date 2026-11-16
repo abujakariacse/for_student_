@@ -1,7 +1,7 @@
 import type { User } from "@/lib/types/user"
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000"
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080"
 
 // Get every registered user — the admin "Users management" screen reads this.
 export const getUsers = async (): Promise<User[]> => {

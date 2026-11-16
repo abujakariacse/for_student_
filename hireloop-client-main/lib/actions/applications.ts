@@ -2,7 +2,7 @@
 import type { Application, ApplicationInput } from "@/lib/types/application"
 import { authFetch } from "../core/server"
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000"
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080"
 
 // Create application
 export const createApplication = async (data: ApplicationInput) => {
